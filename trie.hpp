@@ -1,13 +1,15 @@
 #include <iostream>
 using namespace std;
 
-struct TrieNode{
-    TrieNode *child[26];
-    bool End = true;
+struct TrieNode
+{
+    TrieNode* child[26];
+    bool End = false;
     TrieNode();
 };
-bool Search_Item(struct TrieNode* root, string key);
-int Count_Item(struct TrieNode* root);
-bool Check_Is_Empty(TrieNode* root);
 
-
+bool searchItem(TrieNode* Root, string Key);
+int countItem(TrieNode* Root);
+bool isEmpty(TrieNode* Root);
+void insertItem(TrieNode* root, string key);
+TrieNode* removeItem(TrieNode* root, string key, int depth = 0);
