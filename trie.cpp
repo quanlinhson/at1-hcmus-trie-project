@@ -75,7 +75,7 @@ void insertItem(TrieNode* root, string key)
     track->End = true;
 }
 
-TrieNode* removeItem(TrieNode* root, string key, int depth = 0)
+TrieNode* removeItem(TrieNode* root, string key, int depth)
 {
     if (!root)
     {
