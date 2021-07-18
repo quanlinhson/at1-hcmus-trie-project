@@ -13,3 +13,4 @@ int countItem(TrieNode* Root);
 bool isEmpty(TrieNode* Root);
 void insertItem(TrieNode* root, string key);
 TrieNode* removeItem(TrieNode* root, string key, int depth = 0);
+TrieNode* removeAll(TrieNode *root);
