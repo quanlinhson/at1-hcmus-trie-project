@@ -109,3 +109,12 @@ TrieNode* removeItem(TrieNode* root, string key, int depth)
 
     return root;
 }
+TrieNode* removeAll(TrieNode *root){
+    while(!isEmpty(root)){
+        for (unsigned short int i = 0; i < 26; i++){
+            root->child[i] = NULL;
+            root->End = false;
+        }
+    }
+    return root;
+}
