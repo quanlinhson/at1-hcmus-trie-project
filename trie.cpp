@@ -1,4 +1,6 @@
 #include "trie.hpp"
+#include <fstream>
+using namespace std;
 
 TrieNode::TrieNode()
 {
