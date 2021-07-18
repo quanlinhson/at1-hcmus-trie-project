@@ -109,3 +109,12 @@ TrieNode* removeItem(TrieNode* root, string key, int depth)
 
     return root;
 }
+TrieNode* BuildTrie(TrieNode* root,istream &input, string *keys, int &n){
+    input >> n;
+    keys = new string[n];
+    for (int i = 0; i < n; i++){
+        input >> keys[i];
+        insertItem(root, keys[i]);
+    }
+    return root;
+}
